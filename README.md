@@ -29,3 +29,4 @@ The container listens (on port 3000). It expects POST-requests on `/evaluate` wi
 - the Docker container sometimes seems not to want to respond to `SIGINT`. However, `docker stop` always does.
 - `isolate` allows a maximum of 999 environments at a time. For their management a semaphore is used
 - `isolate` is very restrictive by default. If something does not work, this is a good starting point. Examples: multiple processes, RAM, access to other programs/devices
+- this repo is a (mostly anonymized) public release copy. The real repo is not public and this repo might not always be up to date.
