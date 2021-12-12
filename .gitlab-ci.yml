@@ -1,0 +1,10 @@
+build1:
+  stage: build
+  script:
+    - sudo docker stop $(sudo docker ps -q --filter ancestor=sandbox ) || true
+    - sudo docker rmi -f --no-prune sandbox || true
+    - sudo docker build -t sandbox .
+deploy1:
+  stage: deploy
+  script:
+    - sudo docker run --privileged --restart=always -d -p 3000:3000 sandbox

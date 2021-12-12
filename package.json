@@ -1,0 +1,16 @@
+{
+  "name": "coding-sandbox",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "execa": "^5.1.1",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "joi": "^17.4.2",
+    "semaphore-async-await": "^1.5.1",
+    "ws": "^8.0.0"
+  },
+  "type": "module"
+}
